@@ -9,16 +9,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #222222;
+    background-color: white;
+    color: #222;
     line-height: 1.7;
 }
 
-/* Navigation */
+
+/* Navigation Bar */
 header {
-    width: 100%;
-    border-bottom: 1px solid #eeeeee;
-    background-color: #ffffff;
+    background-color: white;
+    border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -35,7 +35,6 @@ header {
 
 .logo {
     font-size: 23px;
-    font-weight: bold;
 }
 
 .navbar ul {
@@ -46,17 +45,17 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #444444;
+    color: #444;
     font-size: 14px;
-    transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #999999;
+    color: #999;
 }
 
-/* Hero Section */
-.hero {
+
+/* Home Section */
+.intro {
     max-width: 1100px;
     margin: auto;
     padding: 100px 20px;
@@ -66,213 +65,213 @@ header {
     gap: 50px;
 }
 
-.hero-text {
+.intro-text {
     max-width: 600px;
 }
 
-.small-heading {
-    color: #888888;
+.section-label {
+    color: #888;
     font-size: 12px;
     letter-spacing: 3px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.hero h1 {
-    font-size: 58px;
-    line-height: 1.15;
+.intro h1 {
+    font-size: 48px;
+    line-height: 1.2;
     margin-bottom: 15px;
 }
 
-.hero h3 {
+.intro h3 {
     font-size: 20px;
     font-weight: normal;
-    color: #666666;
+    color: #666;
     margin-bottom: 20px;
 }
 
-.hero-text p {
-    color: #666666;
+.intro-text p {
+    color: #666;
     margin-bottom: 25px;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.btn {
+.main-button {
     display: inline-block;
     padding: 12px 24px;
-    background: #222222;
+    background-color: #222;
     color: white;
     text-decoration: none;
-    border: 1px solid #222222;
-    transition: 0.3s;
+    border: 1px solid #222;
 }
 
-.btn:hover {
-    background: #555555;
+.main-button:hover {
+    background-color: #555;
 }
 
-.secondary-btn {
-    background: white;
-    color: #222222;
-}
 
-.secondary-btn:hover {
-    background: #f3f3f3;
-}
-
-.hero-image img {
+/* Profile Photo */
+.my-photo img {
     width: 300px;
     height: 350px;
     object-fit: cover;
     border-radius: 5px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #eee;
 }
 
-/* General Sections */
-.section {
+
+/* Common Section Settings */
+.content-section {
     max-width: 1100px;
     margin: auto;
     padding: 75px 20px;
 }
 
-.section h2 {
+.content-section h2 {
     font-size: 35px;
     margin-bottom: 25px;
 }
 
-/* About */
+
+/* About Section */
 .about-text {
     max-width: 800px;
-    color: #666666;
+    color: #666;
 }
 
-.about-details {
+.my-details {
     display: flex;
     gap: 70px;
     margin-top: 35px;
     flex-wrap: wrap;
 }
 
-.about-details span {
-    color: #888888;
+.my-details span {
+    color: #888;
     font-size: 13px;
 }
 
-.about-details h4 {
+.my-details h4 {
     font-size: 16px;
     margin-top: 5px;
 }
 
-/* Skills */
-.skills-container {
+.interests-title {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.interests {
+    color: #666;
+}
+
+
+/* Skills Section */
+.skills-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.skill {
+.skill-box {
     padding: 22px;
     border: 1px solid #e5e5e5;
-    background: #fafafa;
+    background-color: #fafafa;
     transition: 0.3s;
 }
 
-.skill:hover {
-    border-color: #999999;
+.skill-box:hover {
+    border-color: #999;
     transform: translateY(-3px);
 }
 
-/* Projects */
-.projects-container {
+
+/* Projects Section */
+.projects-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.project-card {
+.project-box {
     border: 1px solid #e5e5e5;
-    padding: 28px;
-    background: #ffffff;
+    padding: 25px;
+    background-color: white;
     transition: 0.3s;
 }
 
-.project-card:hover {
+.project-box:hover {
     transform: translateY(-5px);
-    border-color: #999999;
+    border-color: #999;
 }
 
-.project-number {
-    color: #999999;
-    font-size: 13px;
-}
-
-.project-card h3 {
-    margin: 15px 0;
-    font-size: 20px;
-}
-
-.project-card p {
-    color: #666666;
-    font-size: 14px;
+.project-image {
+    height: 130px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #888;
     margin-bottom: 20px;
 }
 
-.project-tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+.project-box h3 {
+    margin-bottom: 12px;
+    font-size: 19px;
 }
 
-.project-tags span {
-    background: #f2f2f2;
+.project-box p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.project-box span {
+    background-color: #f2f2f2;
     padding: 5px 10px;
     font-size: 12px;
-    color: #555555;
+    color: #555;
 }
 
-/* Contact */
-.contact-section {
+
+/* Contact Section */
+.get-in-touch {
     text-align: center;
 }
 
-.contact-section p {
-    color: #666666;
+.get-in-touch p {
+    color: #666;
 }
 
-.contact-links {
+.my-links {
     margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.contact-links a {
-    color: #222222;
+.my-links a {
+    color: #222;
     text-decoration: none;
-    border-bottom: 1px solid #222222;
-    padding-bottom: 3px;
+    border-bottom: 1px solid #222;
 }
 
-.contact-links a:hover {
-    color: #888888;
+.my-links a:hover {
+    color: #888;
 }
+
 
 /* Footer */
 footer {
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #eee;
     padding: 25px;
     text-align: center;
-    color: #888888;
+    color: #888;
     font-size: 13px;
 }
 
-/* Mobile Responsive */
+
+/* Mobile View */
 @media (max-width: 768px) {
 
     .navbar {
@@ -286,35 +285,35 @@ footer {
         justify-content: center;
     }
 
-    .hero {
+    .intro {
         flex-direction: column-reverse;
         text-align: center;
         padding: 60px 20px;
     }
 
-    .hero h1 {
-        font-size: 42px;
+    .intro h1 {
+        font-size: 38px;
     }
 
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-image img {
+    .my-photo img {
         width: 230px;
         height: 270px;
     }
 
-    .skills-container,
-    .projects-container {
+    .skills-list,
+    .projects-list {
         grid-template-columns: 1fr;
     }
 
-    .about-details {
+    .my-details {
         gap: 25px;
     }
 
-    .section {
+    .content-section {
         padding: 55px 20px;
+    }
+
+    .my-links {
+        flex-wrap: wrap;
     }
 }
